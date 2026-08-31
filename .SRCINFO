@@ -1,0 +1,13 @@
+pkgbase = syn-model
+	pkgdesc = SynapseOS model manager — download and manage LLM models
+	pkgver = 0.1.0
+	pkgrel = 6
+	arch = any
+	license = GPL-2.0-or-later
+	depends = curl
+	depends = systemd
+	depends = polkit
+	source = syn-model-0.1.0.tar.gz::https://github.com/velle999/syn-model/releases/download/0.1.0-6/syn-model-0.1.0.tar.gz
+	sha256sums = SKIP
+
+pkgname = syn-model
