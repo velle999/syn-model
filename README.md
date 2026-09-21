@@ -40,6 +40,7 @@ file.
 ## Install
 
 ```bash
+curl -sL https://soslinux.org/synapseos-update-key.asc | gpg --import   # once
 git clone https://github.com/velle999/syn-model
 cd syn-model && makepkg -si
 ```
@@ -47,6 +48,10 @@ cd syn-model && makepkg -si
 makepkg fetches the source for this PKGBUILD's exact version from this
 repository's releases, so a clone can only ever build the source it was
 written against. `.SRCINFO` lists what it needs.
+
+The source is signed with the SynapseOS update key, and makepkg refuses it
+unless the signature is good. The fingerprint is in
+[SECURITY.md](https://github.com/velle999/SYNAPSE/blob/main/SECURITY.md).
 
 ## Where this comes from
 
